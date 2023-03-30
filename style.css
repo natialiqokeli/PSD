@@ -10,11 +10,35 @@ body{
 a {
   text-decoration: none;
 }
+
+ul li {
+  list-style: none;
+}
+
+input {
+  cursor: pointer;
+}
+
 .content {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
 }
+
+.small-div-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(28, 39, 82, 1);
+  font-size: 18px;
+}
+
+.small-div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
 
 .header-grey {
   background-color: rgba(242, 242, 242, 1);
@@ -106,7 +130,6 @@ a {
   background-color: rgba(28, 39, 82, 1);
   color: white;
   font-size: 20px;
-  cursor: pointer;
   transition-property: width, height, background-color;
   transition-duration: 0.7s;
   transition-timing-function: ease;
@@ -165,7 +188,6 @@ a {
   padding: 20px 33px;
   color: rgba(28, 39, 82, 1);
   font-size: 20px;
-  cursor: pointer;
 }
 
 .banner-input:hover {
@@ -187,30 +209,27 @@ a {
 }
 
 .about-text {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 8px 16px;
   width: 230px;
+  height: 45px;
   background-color: rgba(244, 244, 244, 1);
-  color: rgba(28, 39, 82, 1);
 }
 
 .about-title {
   width: 500px;
+  height: 100px;
 }
 
 .about-title h2 {
   color: rgba(28, 39, 82, 1);
   font-size: 45px;
-  position: relative;
-  bottom: 22px;
+  margin: 0;
+  margin-top: 10px;
+
 }
 
 .about-content p {
   font-size: 18px;
   color: rgba(126, 126, 126, 1);
-  margin-top: -40px;
 }
 
 .about-experience {
@@ -251,7 +270,6 @@ a {
 }
 
 .experience-points ul {
-  list-style-type: none;
   line-height: 38px;
   font-size: 18px;
   color: rgba(126, 126, 126, 1);
@@ -300,22 +318,19 @@ a {
   top: 50px;
   left: 10px;
 }
-.commercial-button input {
+.commercial-button input{
+  background-color: white;
+  border: none;
+}
+.service-button-basic input{
   width: 220px;
   height: 65px;
   color: rgba(28, 39, 82, 1);
   font-size: 20px;
   border: 1px solid rgba(28, 39, 82, 1);
-  cursor: pointer;
 }
 .service-button input{
-  width: 220px;
-  height: 65px;
-  color: rgba(28, 39, 82, 1);
-  font-size: 20px;
-  border: 1px solid rgba(28, 39, 82, 1);
   background-color: rgba(255, 179, 66, 1);
-  cursor: pointer;
 }
 
 .service-commercial {
@@ -336,42 +351,30 @@ a {
   width: 560px;
   height: 390px;
 }
-.commercial-one {
+.commercial-subtext {
   width: 260px;
   height: 45px;
   background-color: rgba(244, 244, 244, 1);
   
 }
-.commercial-one img {
+.commercial-subtext img {
   width: 28px;
   height: 28px;
-}
-.commercial-two {
-  width: 225px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  position: relative;
-  top: 8px;
 }
 .commercial-text h4 {
   color: rgba(28, 39, 82, 1);
   font-size: 35px;
-  position: relative;
-  bottom: 20px;
+  margin: 0;
+  margin-top: 15px;
 }
 .commercial-text p {
+  line-height: 23px;
   color: rgba(126, 126, 126, 1);
   font-size: 18px;
-  position: relative;
-  bottom: 45px;
 }
 
 .commercial-button-two input {
-  position: relative;
-  bottom: 13px;
+  margin-top: 32px;
   padding: 20px 44px;
   background-color: rgba(255, 179, 66, 1);
   border: none;
@@ -389,6 +392,7 @@ a {
 }
 .commercial-img img {
   width: 470px;
+  height: 390px;
 }
 
 .all-services {
@@ -396,8 +400,7 @@ a {
   background-color: rgba(244, 244, 244, 1);
 }
 .about-service {
-  position: relative;
-  top: 295px;
+  margin-top: 295px;
 }
 .services-heading {
   margin: 0 auto;
@@ -410,33 +413,18 @@ a {
 .services-heading p {
   color: rgba(126, 126, 126, 1);
   font-size: 18px;
-  position: relative;
-  bottom: 120px;
   text-align: center;
 }
-.our-services-two {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
+.our-services {
+  margin: 0 auto;
   background-color: rgba(255, 255, 255, 1);
   width: 170px;
   height: 45px;
 }
-.our-services-one {
-  display: flex;
-  justify-content: center;
-}
 .services-title h5 {
   font-size: 45px;
   color: rgba(28, 39, 82, 1);
-  position: relative;
-  bottom: 50px;
-}
-
-.our-services-one img{
-  width: 21px;
-  height: 21px;
+  margin: 0;
 }
 
 .services-type {
@@ -446,17 +434,13 @@ a {
 }
 
 .services-line-one {
+  margin-top: 37px;
   display: flex;
   justify-content: space-between;
 }
 
-.services {
-  position: relative;
-  top: 37px;
-}
 .services-line-two {
-  position: relative;
-  top: 27px;
+  margin-top: 30px;
   display: flex;
   justify-content: space-between;
 }
@@ -464,8 +448,7 @@ a {
   width: 310px;
   height: 230px;
   margin: 0 auto;
-  position: relative;
-  top: 47px;
+  margin-top: 47px;
 }
 .services-details img  {
   width: 48px;
@@ -475,22 +458,19 @@ a {
 .services-details h6 {
   color: rgba(255, 179, 66, 1);
   font-size: 25px;
-  position: relative;
-  bottom: 30px;
+  margin: 0;
+  margin-top: 20px;
 }
 
 .services-details p {
   color: rgba(210, 210, 210, 1);
   font-size: 18px;
-  position: relative;
-  bottom: 70px;
+  margin-top: 11px;
 }
 .services-details a {
   text-decoration: none;
   color: rgba(255, 255, 255, 1);
-  font-size: 18px;
-  position: relative;
-  bottom: 65px;
+  font-size: 18px; 
 }
 .choose-row {
   width: 630px;
@@ -503,18 +483,18 @@ a {
 }
 .counters {
   display: flex;
-  position: relative;
-  top: 100px;
+  
 }
 .choose-counters {
-  width: 300px;
-  height: 220px;
+  margin: 0 auto;
+  width: 400px;
+  height: 330px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 23px;
-  margin-left: 65px;
-  margin-top: 30px;
+  margin-top: 90px;
 }
 .blur-background {
   margin-top: -600px;
@@ -529,28 +509,21 @@ a {
   width: 75px;
   height: 45px;
   background-color: rgba(255, 179, 66, 1);
-}
-.orange-div span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   color: rgba(28, 39, 82, 1);
   font-size: 20px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  top: 7px;
 }
 .counters-containers {
   width: 200px;
   height: 43px;
   border: 1px solid rgba(255, 255, 255, 1);
-}
-.counters-containers span {
-  color: rgba(255, 255, 255, 1);
-  font-size: 20px;
   display: flex;
   justify-content: center;
-  position: relative;
-  top: 7px;
+  align-items: center;
+  color: rgba(255, 255, 255, 1);
+  font-size: 20px;
 }
 .choose-reason {
   width: 900px;
@@ -566,24 +539,11 @@ a {
   margin-left: 30px;
 }
 .choose-text {
+  background-color: rgba(244, 244, 244, 1);
   width: 200px;
   height: 45px;
-  background-color: rgba(244, 244, 244, 1);
 }
-.choose-us {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-.choose-us span {
-  color: rgba(28, 39, 82, 1);
-  font-size: 18px;
-  margin-top: 10px;
-}
-.choose-us img {
-  margin-top: 10px;
-}
+
 .choose-heading h6 {
   width: 500px;
   margin: -1px;
@@ -658,26 +618,16 @@ a {
   display: flex;
   justify-content: center;
 }
-.gallery-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  width: 160px;
-  height: 45px;
-  background-color: rgba(244, 244, 244, 1);
-}
+
 .gallery-title img {
   width: 22px;
   height: 22px;
 }
-.gallery-title span {
-  color: rgba(28, 39, 82, 1);
-  font-size: 18px;
-}
 .gallery-text {
-  display: flex;
-  justify-content: center;
+  margin: 0 auto;
+  width: 160px;
+  height: 45px;
+  background-color: rgba(244, 244, 244, 1);
 }
 .gallery-album {
   display: flex;
@@ -707,16 +657,15 @@ a {
   width: 195px;
   height: 60px;
   margin: 0 auto; 
-  margin-top: -50px;
   text-align: center;
 }
 .img-heading h6 {
+  margin: 0;
   font-size: 16px;
   color: rgba(28, 39, 82, 1);
+  line-height: 25px;
 }
 .img-heading span {
-  position: relative;
-  bottom: 30px;
   color: rgba(126, 126, 126, 1);
 }
 .testimonial  {
@@ -735,22 +684,10 @@ a {
   height: 320px;
   margin-top: 35px;
 }
-.testimonial-title-text {
+.testimonial-subtext {
   width: 160px;
   height: 45px;
   background-color: rgba(244, 244, 244, 1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.testimonial-title-text-content {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.testimonial-title-text-content span {
-  color: rgba(28, 39, 82, 1);
-  font-size: 18px;
 }
 .testimonial-title {
   width: 300px;
@@ -771,17 +708,14 @@ a {
   width: 500px;
   height: 330px;
   margin: 0 auto;
-  position: relative;
-  top: 40px;
+  margin-top: 40px;
 }
 .luther-content {
   height: 255px;
 }
 .testimonial-navigation {
-  display: flex;
   width: 100px;
   height: 45px;
-  text-decoration: none;
 }
 .luther-one {
   height: 90px;
@@ -833,23 +767,6 @@ a {
 .luther-content span {
   color: rgba(28, 39, 82, 1);
 }
-.nav-one {
-  width: 44px;
-  height: 44px;
-  background-color: rgba(248, 248, 248, 1);
-  border-radius: 50%;
-  text-align: center;
-  border: none;
-}
-.nav-two {
-  width: 44px;
-  height: 44px;
-  background-color: rgba(255, 179, 66, 1);
-  border-radius: 50%;
-  text-align: center;
-  margin-left: 10px;
-  border: none;
-}
 .testimonial-footer {
   height: 320px;
   background-color: rgba(255, 179, 66, 1);
@@ -865,31 +782,18 @@ a {
   width: 170px;
   height: 45px;
   background-color: rgba(244, 244, 244, 1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.any-questions {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-.any-questions span {
-  color: rgba(28, 39, 82, 1);
-  font-size: 18px;
 }
 .testimonial-contact {
   margin-top: 20px;
   height: 87px;
 }
-.testimonial-contact span {
-  color: rgba(28, 39, 82, 1);
-  font-size: 25px;
-}
 .testimonial-contact p {
   color: rgba(28, 39, 82, 1);
   font-size: 18px;
+}
+.testimonial-contact span {
+  color: rgba(28, 39, 82, 1);
+  font-size: 25px;
 }
 .testimonial-number {
   display: flex;
@@ -905,15 +809,6 @@ a {
   width: 135px;
   height: 45px;
   background-color: rgba(244, 244, 244, 1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.test-text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
 }
 .testimonial-form {
   height: 765px;
@@ -924,18 +819,17 @@ a {
   width: 465px;
   height: 630px;
   margin: 0 auto;
-  position: relative;
-  top: 68px;
 }
 .forms {
   height: 565px;
 }
 .testimonial-submit {
+  color: rgba(28, 39, 82, 1);
+  font-size: 20px;
   border: none;
   width: 469px;
   height: 65px;
   background-color: rgba(255, 179, 66, 1);
-  cursor: pointer;
 }
 form {
   display: flex;
@@ -943,6 +837,7 @@ form {
   gap: 30px;
 }
 .testimonial-inputs {
+  font-size: 18px;
   width: 465px;
   height: 65px;
   border: none;
@@ -951,6 +846,7 @@ form {
   outline: none;
 }
 .testimonial-textarea {
+  font-size: 18px;
   height: 140px;
   width: 445px;
   border: none;
@@ -975,18 +871,6 @@ form {
   height: 45px;
   background-color: rgba(244, 244, 244, 1);
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
-}
-.clients-subtext-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-}
-.clients-subtext-title span {
-  color: rgba(28, 39, 82, 1);
-  font-size: 18px;
 }
 .clients-title h6 {
   font-size: 35px;
@@ -1083,20 +967,9 @@ form {
   height: 165px;
 }
 .pricing-subtext {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 185px;
   height: 45px;
   background-color: rgba(255, 255, 255, 1);
-}
-.pricing-subtext-title {
-  display: flex;
-  gap: 10px;
-}
-.pricing-subtext-title span{
-  font-size: 18px;
-  color: rgba(28, 39, 82, 1);
 }
 .pricing-heading h6 {
   font-size: 45px;
@@ -1202,7 +1075,6 @@ form {
   border: none;
   font-size: 20px;
   color: rgba(28, 39, 82, 1);
-  cursor: pointer;
   margin-top: 40px;
 }
 #price-button-second {
@@ -1212,7 +1084,6 @@ form {
   border: 1px solid rgba(255, 179, 66, 1);
   font-size: 20px;
   color: rgba(28, 39, 82, 1);
-  cursor: pointer;
   margin-top: 40px;
 }
 .pricing-points {
@@ -1270,18 +1141,6 @@ form {
   width: 190px;
   height: 45px;
   background-color: rgba(244, 244, 244, 1);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.blog-subtext-title {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-}
-.blog-subtext-title span {
-  font-size: 18px;
-  color: rgba(28, 39, 82, 1);
 }
 .blog-content-basic {
   Width: 584px;
@@ -1341,7 +1200,6 @@ form {
   background-color: white;
   font-size: 20px;
   color: rgba(28, 39, 82, 1);
-  cursor: pointer;
 }
 .newslatter {
   margin-top: 180px;
@@ -1397,7 +1255,6 @@ form {
   border: none;
   font-size: 20px;
   color: rgba(28, 39, 82, 1);
-  cursor: pointer;
 }
 footer {
   height: 545px;

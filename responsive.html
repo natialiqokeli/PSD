@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .container {
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
+    }
+    header {
+      background-color: blueviolet;
+      text-align: center;
+    }
+    main {
+      display: flex;
+    }
+    .menu {
+      flex-basis: 250px;
+    }
+    .menu__list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 12px;
+    }
+    .menu_item {
+      background-color: brown;
+
+    }
+    aside {
+      flex-basis: 250px;
+    }
+    .content {
+      flex: 1;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>hello on my first responsive website</h1>
+    </header>
+    <main>
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu_item">Home</li>
+          <li class="menu_item">Products</li>
+          <li class="menu_item">About us</li>
+          <li class="menu_item">Services</li>
+          <li class="menu_item">Contact us</li>
+        </ul>
+      </nav>
+      <div class="content">
+        Content
+      </div>
+      <aside>
+        Side Bar
+      </aside>
+    </main>
+    <footer></footer>
+  </div>
+
+</body>
+</html>
